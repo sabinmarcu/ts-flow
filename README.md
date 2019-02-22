@@ -19,4 +19,4 @@ $ yarn flow
 
 ## Outcome 
 
-Running the experiment will reveal what has been claimed in (#experiment)[the experiment section]. The babel + flowtype build will fail at flowtype checks, while the typescript build will fail at execution.
+Running the experiment will reveal what has been claimed in [the experiment section](#experiment). The babel + flowtype build will fail at flowtype checks, while the typescript build will fail at execution.
