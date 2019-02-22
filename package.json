@@ -1,0 +1,29 @@
+{
+  "name": "ts-flow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:sabinmarcu/ts-flow.git",
+  "author": "Sabin Marcu <sabin.marcu@rga.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.3",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-flow": "^7.0.0",
+    "flow-bin": "^0.93.0",
+    "npm-run-all": "^4.1.5",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3333"
+  },
+  "scripts": {
+    "ts": "npm-run-all ts:*",
+    "ts:clean": "rm index.ts || true",
+    "ts:copy": "cp index.base.js index.ts",
+    "ts:run": "ts-node index.ts",
+    "flow": "npm-run-all flow:*",
+    "flow:clean": "rm index.js || true",
+    "flow:copy": "cp index.base.js index.js",
+    "flow:check": "flow check-contents < index.js",
+    "flow:run": "babel-node index.js"
+  }
+}
